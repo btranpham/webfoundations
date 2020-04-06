@@ -1,0 +1,299 @@
+/* Applying a background image behind the body */
+html {
+	background-image: url('../images/bats.gif');
+	background-repeat: repeat;	
+}
+
+/* Using the universal selector, to reset margins 
+and paddings for all elements to zero. */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 800px;
+	background-color: #ffffff;
+	margin: auto;
+	border: 2px solid black;
+	box-shadow: 0px 10px 10px 10px black;
+}
+
+/* Styles for the links */
+a {
+	font-weight: bold;
+	color: orange;
+}
+
+a:link, a:visited { 
+	color: orange; 
+}
+
+a:hover, a:focus { 
+    color: green;
+}
+
+/* Header section
+
+   Added gradient colour as the background and some padding.
+   Also added the border to the bottom of the section. 
+*/
+header {
+	padding: 15px;
+	border-bottom: 2px solid black;
+	
+	background-image: -webkit-linear-gradient(
+			45deg, white 0%, orange 75%, black 100%);	
+	background-image: -moz-linear-gradient(
+			45deg, white 0%, orange 75%, black 100%);
+	background-image: -o-linear-gradient(
+			45deg, white 0%, orange 75%, black 100%);	
+	background-image: linear-gradient(
+			45deg, white 0%, orange 75%, black 100%);
+}
+
+header img { 
+	float: left; 
+} 
+
+header h2 {
+	font-size: 230%;
+	text-indent: 25px;
+	
+}
+
+header h3 {
+	font-size: 125%;
+	text-indent: 25px;
+	
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: orange;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Main section */
+main h1 { 
+	font-size: 140%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	font-size: 125%;
+	padding: 10px 10px;
+}
+
+main h3 {
+	font-size: 110%;
+	padding: 10px 10px;
+}
+
+main p {
+	padding: 5px 5px;
+}
+
+
+ul {
+	line-height: 1.5em;
+	margin: 0px 0px 0px 35px;
+}
+
+section {
+	width: 665px;	
+	padding: 0 20px 20px 20px;
+}
+
+section h1 {
+	font-size: 150%;
+	color: #000000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+/* Sidebar section 
+   Displaying on  the left. 
+*/
+aside {
+	float: left;
+	width: 160px;
+	padding-top: 15px !important;
+	min-height: 770px;	
+}
+
+/* Footer section styles
+
+   Cleared the float.
+   Added gradient colour as the background, and some margin and padding.
+   Also added the border to the top of the section.
+*/
+   
+footer {
+	clear: left;
+	margin-top: 20px;
+	padding: 15px 0px;
+	border-top: 2px solid black;
+	background-image: -webkit-linear-gradient(
+			45deg, black 0%, orange 25%, white 100%);	
+	background-image: -moz-linear-gradient(
+			45deg, black 0%, orange 25%, white 100%);
+	background-image: -o-linear-gradient(
+			45deg, black 0%, orange 25%, white 100%);	
+	background-image: linear-gradient(
+			45deg, black 0%, orange 25%, white 100%);
+}
+
+footer p {
+	font-size: 90%;
+	text-align: center;	
+}
+
+/* the styles for the form */
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend {
+    color: grey;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+	margin-top: 1em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 2px solid orange;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#payment_method label {
+	clear: right;
+	
+}
+input[type="radio"]{
+	width: auto;
+	margin-left: .5em;
+}
+#buttons input {
+	width: 10em;
+}
+#month {
+	width: 7em;
+}
+#year {
+	width: 5em;
+}
+#submit {
+	width: 10em;
+}
+#reset {
+	width: 10em;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* the styles for the form end */

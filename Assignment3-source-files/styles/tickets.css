@@ -1,0 +1,103 @@
+/* the styles for the form */
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend {
+    color: grey;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+	margin-top: 1em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 2px solid orange;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#payment_method label {
+	clear: right;
+	
+}
+input[type="radio"]{
+	width: auto;
+	margin-left: .5em;
+}
+#buttons input {
+	width: 10em;
+}
+#month {
+	width: 7em;
+}
+#year {
+	width: 5em;
+}
+#submit {
+	width: 10em;
+}
+#reset {
+	width: 10em;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* the styles for the form end */
